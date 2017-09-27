@@ -6,29 +6,25 @@ class BaseLayout extends Component {
     return(
       <div>
         <header>
-          <nav className="navbar navbar-toggleable-md navbar-light bg-faded">
+          <nav className="nav justify-content-center">
             <Link to="/">
-              <div className="nav-bar brand">
+              <li className="nav-link">
                 Home
-              </div>
+              </li>
             </Link>
             <Link to="/portfolio">
-              <div className="nav-link">
+              <li className="nav-link">
                 Portfolio
-              </div>
+              </li>
             </Link>
             <Link to="/about">
-              <div className="nav-link">
+              <li className="nav-link">
                 About
-              </div>
+              </li>
             </Link>
           </nav>
         </header>
-        BaseLayout
         {this.props.children}
-        <footer>
-          This is a footer.
-        </footer>
       </div>
     )
   }
